@@ -1,0 +1,26 @@
+<table class="default">
+
+    <tr>
+  
+      <td>Nombre de usuario</td>
+  
+      <td>Fecha nacimiento</td>
+  
+      <td>Edad</td>
+
+      <td>Dirección</td>
+  
+    </tr>
+  
+    <tr *ngFor="let d of direccion">
+  
+      <td>{{d.username}}</td>
+  
+      <td>{{d.fechaNacimiento}}</td>
+  
+      <td>{{d.edad}}</td>
+      <td>calle {{d.domicilio}} num. {{d.numero_exterior}}, colonia {{d.colonia}} cp. {{d.cp}}, ciudad {{d.ciudad}}</td>
+  
+    </tr>
+  
+  </table>
